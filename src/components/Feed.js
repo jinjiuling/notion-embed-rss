@@ -6,7 +6,7 @@ import { EmptyFeed } from "./EmptyFeed";
 export const Feed = ({ feed }) => (
   <li className={styles.feed}>
     <h2>{feed.title}</h2>
-
+    <h6>{feed.description}</h6>
     {feed.items.length > 0 ? <FeedItems feed={feed} /> : <EmptyFeed />}
   </li>
 );
