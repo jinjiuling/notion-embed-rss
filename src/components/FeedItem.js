@@ -6,4 +6,5 @@ export const FeedItem = ({ item }) => (
     <a href={item.link} target="_blank" />
     <time>{item.date}</time>
   </li>
+  <div class="root">{item.description}</div>
 );
