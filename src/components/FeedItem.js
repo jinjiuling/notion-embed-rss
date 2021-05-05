@@ -5,6 +5,7 @@ export const FeedItem = ({ item }) => (
     <p>{item.title}</p>
     <a href={item.link} target="_blank" />
     <time>{item.date}</time>
+    <div class="root">{item.description}</div>
   </li>
-  <div class="root">{item.description}</div>
+  
 );
