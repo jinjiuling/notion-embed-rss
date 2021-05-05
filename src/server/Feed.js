@@ -1,7 +1,7 @@
 import { FeedItem } from "./FeedItem";
 
 export class Feed {
-  constructor({ title, link,description, items }) {
+  constructor({ title, link, description, items }) {
     this.title = title;
     this.link = link;
     this.description = description;
