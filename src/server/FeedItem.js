@@ -1,9 +1,10 @@
 import { PublicationDate } from "./PublicationDate";
 
 export class FeedItem {
-  constructor({ title, link, pubDate }) {
+  constructor({ title, link, pubDate, description }) {
     this.title = title;
     this.link = link;
+    this.description = description;
     this.date = new PublicationDate(pubDate);
   }
 
@@ -20,6 +21,7 @@ export class FeedItem {
       title: this.title,
       link: this.link,
       date: this.pubDate,
+      description: this.description,
     };
   }
 }
